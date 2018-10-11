@@ -1,0 +1,74 @@
+html {
+    font-family: Arial;
+    font-size: 13px;
+}
+
+.grid {
+    display: grid;
+    margin: auto;
+    grid-template-areas: "top top"
+                        "search search"
+                        "versions versions"
+                        "footer-l footer-r";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 3fr 2fr 1fr;
+    max-height: 670px;
+}
+
+.top {
+    grid-area: top;
+    justify-self: end;
+    word-spacing: 0.6em;
+    margin: 20px 150px;
+ }
+
+ .top a {
+     color: black;
+     text-decoration: none;
+ }
+
+.search {
+    grid-area: search;
+    text-align: center;
+    margin: 3px;
+}
+
+img {
+    width: 275px;
+    margin: 10px 10px;
+  }
+
+button {
+    font-size: 13px;
+    background-color: rgb(235, 235, 235);
+    color: rgb(104, 103, 103);
+    font-weight: bold;
+}
+
+.versions {
+    grid-area: versions;
+    text-align: center;
+}
+
+.versions a {
+    color: rgb(1, 1, 145);
+    text-decoration: none;
+}
+
+.footer-left {
+    grid-area: footer-l;
+    justify-items: start;
+    margin: 30px 30px;
+}
+
+.footer-right {
+    grid-area: footer-r;
+    justify-self: end;
+    margin: 30px 3px;
+    word-spacing: 1em;
+}
+
+.footer-left, .footer-right {
+    background-color: rgb(235, 235, 235);
+    color: rgb(104, 103, 103);
+}
