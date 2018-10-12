@@ -1,36 +1,26 @@
-html {
+html, body {
     font-family: Arial;
     font-size: 13px;
-}
-
-.grid {
-    display: grid;
-    margin: auto;
-    grid-template-areas: "top top"
-                        "mid mid"
-                        "bottom bottom"
-                        "left right";
-    grid-template-rows: 30% 60% 5% 5%;
-    grid-template-columns: 50% 50%;
-    min-height: 675px;
+    margin: 0;
 }
 
 .top {
-    grid-area: top;
     justify-self: end;
     word-spacing: 0.6em;
-    margin-right: 20px;
+    margin-top: 10px;
+    margin-right: 25px;
+    text-align: right;
  }
-
+ 
  .top a {
      color: black;
      text-decoration: none;
  }
-
+ 
  .top a:hover {
      text-decoration: underline;
  }
-
+ 
  .top button {
      font-size: 12px;
      color: white;
@@ -41,12 +31,11 @@ html {
      border-radius: 2px;
      -moz-border-radius: 2px;
      -webkit-border-radius: 2px;
-     width: 90px;
+     width: 120px;
      height: 30px;
  }
 
 .mid {
-     grid-area: mid;
      text-align: center;
      margin: 3px;
      align-self: center;
@@ -77,6 +66,7 @@ img {
     -webkit-border-radius: 2px;
     height: 35px;
     width: 110px;
+    margin: 3px;
 }
 
 #lucky {
@@ -89,6 +79,7 @@ img {
     -webkit-border-radius: 2px;
     height: 35px;
     width: 140px;
+    margin: 3px;
 }
 
 .mid a {
@@ -100,38 +91,41 @@ img {
     text-decoration: underline;
 }
 
-.bottom {
-    grid-area: bottom;
-    color: rgb(104, 103, 103);
+footer {
+    color: rgba(0,0,0,.54);
     background-color: rgb(240, 240, 240);
-    font-size: 15px;
     border-top: 1px solid #e4e4e4;
-    height: 40px;
+    word-spacing: 2em;
+    text-align: bottom;
 }
 
-.bottom-left {
-    grid-area: left;
-    background-color: rgb(240, 240, 240);
-    color: rgb(104, 103, 103);
-    border-top: 1px solid #e4e4e4;
-    height: 40px;
-    word-spacing: 2em;
-   }
-
-.bottom-right {
-    grid-area: right;
-    background-color: rgb(240, 240, 240);
-    color: rgb(104, 103, 103);
-    border-top: 1px solid #e4e4e4;
-    height: 40px;
-    word-spacing: 2em;
+footer p:first-line {
+    font-size: 16px;
 }
 
-.bottom-left a, .bottom-right a {
-    color: rgb(104, 103, 103);
+footer .left {
+    float: left;
+}
+
+footer .right {
+    text-align: right;
+}
+
+footer a {
+    color: rgba(0,0,0,.54);
     text-decoration: none;
 }
 
-.bottom-left a:hover, .bottom-right a:hover {
+footer a:hover {
     text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
 }
