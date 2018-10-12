@@ -5,7 +5,6 @@ html, body {
 }
 
 .top {
-    justify-self: end;
     word-spacing: 0.6em;
     margin-top: 10px;
     margin-right: 25px;
@@ -37,8 +36,7 @@ html, body {
 
 .mid {
      text-align: center;
-     margin: 3px;
-     align-self: center;
+     margin: 135px;
 }
 
 #search {
@@ -96,7 +94,12 @@ footer {
     background-color: rgb(240, 240, 240);
     border-top: 1px solid #e4e4e4;
     word-spacing: 2em;
-    text-align: bottom;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    max-width: 100%;
+    padding: 0 30px 15px 30px;
 }
 
 footer p:first-line {
@@ -108,7 +111,7 @@ footer .left {
 }
 
 footer .right {
-    text-align: right;
+    float: right;
 }
 
 footer a {
